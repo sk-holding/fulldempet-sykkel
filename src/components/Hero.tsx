@@ -30,10 +30,12 @@ const Hero = () => {
       <div className="parallax absolute inset-0">
         <div 
           ref={parallaxRef}
-          className="parallax-bg"
+          className="parallax-bg w-full h-full"
           style={{
             backgroundImage: 'url("https://images.unsplash.com/photo-1669124761702-61b5bb809f98?q=80&w=2070&auto=format&fit=crop")',
-            backgroundPosition: 'center bottom',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat'
           }}
         />
         <div className="absolute inset-0 bg-black/40" />
