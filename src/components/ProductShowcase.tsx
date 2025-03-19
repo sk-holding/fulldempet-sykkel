@@ -1,16 +1,10 @@
-
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { fetchProducts } from '../lib/sanity';
 import { SanityProduct } from '../types/sanity';
 import { useQuery } from '@tanstack/react-query';
 
-// Import the local images
-import bikeImage1 from '../assets/bike1.jpg';
-import bikeImage2 from '../assets/bike2.jpg';
-import bikeImage3 from '../assets/bike3.jpg';
-
-// Fallback products with local images
+// Fallback products with placeholder image URLs
 const fallbackProducts = [
   {
     _id: '1',
@@ -18,7 +12,7 @@ const fallbackProducts = [
     description: 'Vår toppmodell med karbonramme og 150mm vandring for krevende terreng og lange turer.',
     price: 'NOK 49.990',
     specs: ['500Wh batteri', 'FOX dempere', 'Shimano EP8 motor', 'Carbon ramme'],
-    imageUrl: bikeImage1
+    imageUrl: 'https://placehold.co/600x400/forest/white?text=Terreng+Pro+X1'
   },
   {
     _id: '2',
@@ -26,7 +20,7 @@ const fallbackProducts = [
     description: 'Allsidig mellomdistanse elsykkel med perfekt balanse mellom ytelse og verdi.',
     price: 'NOK 39.990',
     specs: ['400Wh batteri', 'RockShox dempere', 'Bosch CX motor', 'Aluminium ramme'],
-    imageUrl: bikeImage2
+    imageUrl: 'https://placehold.co/600x400/forest/white?text=Sti+Eventyrer+S3'
   },
   {
     _id: '3',
@@ -34,7 +28,7 @@ const fallbackProducts = [
     description: 'Stilig bysykkel med full demping som håndterer byterrenget like bra som skogsstiene.',
     price: 'NOK 34.990',
     specs: ['300Wh batteri', 'SR Suntour dempere', 'Shimano Steps motor', 'Aluminium ramme'],
-    imageUrl: bikeImage3
+    imageUrl: 'https://placehold.co/600x400/forest/white?text=Urban+Explorer+E2'
   }
 ];
 

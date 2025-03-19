@@ -1,7 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
 import { ChevronDown } from 'lucide-react';
-import heroBackground from '../assets/hero-background.jpg';
 
 const Hero = () => {
   const parallaxRef = useRef<HTMLDivElement>(null);
@@ -33,7 +32,8 @@ const Hero = () => {
           ref={parallaxRef}
           className="parallax-bg"
           style={{
-            backgroundImage: `url(${heroBackground})`,
+            // Replace with your local image later
+            backgroundImage: `url(https://placehold.co/1920x1080/forest/white?text=Hero+Background)`,
             backgroundPosition: 'center bottom',
           }}
         />

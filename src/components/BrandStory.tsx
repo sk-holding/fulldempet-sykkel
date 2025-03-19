@@ -1,6 +1,4 @@
-
 import React, { useEffect, useRef } from 'react';
-import brandStoryImage from '../assets/brand-story.jpg';
 
 const BrandStory = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -61,7 +59,7 @@ const BrandStory = () => {
         <div ref={imageRef} className="opacity-0 relative">
           <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
             <img 
-              src={brandStoryImage} 
+              src="https://placehold.co/800x600/forest/white?text=Brand+Story" 
               alt="Mountain biker on trail" 
               className="w-full h-auto"
             />
