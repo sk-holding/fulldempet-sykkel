@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
-import { Battery, Zap, Mountain, Compass, Shield, Tool } from 'lucide-react';
+import { Battery, Zap, Mountain, Compass, Shield, Wrench } from 'lucide-react';
 
 const featuresList = [
   {
@@ -37,7 +37,7 @@ const featuresList = [
     id: 6,
     title: 'Enkelt Vedlikehold',
     description: 'Designet for enkel tilgang til kritiske komponenter, med regelmessige serviceoppdateringer.',
-    icon: <Tool className="w-6 h-6 text-forest" />
+    icon: <Wrench className="w-6 h-6 text-forest" />
   }
 ];
 
